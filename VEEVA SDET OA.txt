@@ -1,0 +1,52 @@
+VEEVA SDET 
+round 1 : Online Assement
+
+part A :
+
+MCQ's on Core Java
+OOP concepts (classes ,objects,constructors,methods,object referneces ,methodover loading,constructor overloading,method overriding,dynamic method dispatch
+MCQ's on Exception Handling
+MCQ's on multi threading including semaphore,wait(),notify(),notifyAll()
+MCQ's on find output questions on arrays,on strings,Data Structures(java collections),control statements,
+
+Part B :
+
+MCQ's on English Vocabulary Grammar (verbal)
+
+Part C :
+
+MCQ's on Aptitude reasoning
+
+Time and Work ,pipes and systems,speed and distance,data interpretation
+
+Part D : 
+
+two or three coding questions on arrays,strings,algorthims two pointer,sliding window,greedy,Hashing,Hashmap,treemaps,stack,linked list and queues's
+
+Easy --> Medium level from leetcode
+
+Coding Questions :
+
+1.Find Indices of two numbers in an array that add upto a specific Target Value in O(n) time.
+note : the Input array is unsorted.
+2.Return an Array where each element in product of all other elements without using the division operator
+3.Given an array of N elements,rotate the array right by k steps
+4.Given an array of intergers +ve,-ve,0's find contigious sub array with largest sum.
+5.Given an array of N integers which are between 0 to n,where 1 integer is missing in the array ,find the missing integer.
+6.Given a 2D board of characters and also a target word,now search wheather word can be found using adjacent characters of the board,from any location it can traverse,down left right up
+7.you are given a encoded string which looks like 3[a]2[bc] now epand to original string by decoding it 
+
+3[a2[bc]] --> abcbcabcbcabcbc
+
+8.A transaction is invalid if its amount is exceed $1000 or if it occurs with 60 minutes of another transaction with the same name,but in a different city.you are given a list of strings now return all the invalid strings.
+
+["name,time,amount,city]
+
+9.count the no of sub arrays containing the exactly k odd numbers 
+n=5 k=3 [1 1 2 1 1] o/p : 2
+
+n=4 k=0 [2 4 6 8] o/p : 10 
+n=4 k=0 []
+n=1 k=0 [2] o/p : 1
+n=1 k=1 [1] o/P : 1 
+n=3 k=5 [1 3 5] o/p:0 

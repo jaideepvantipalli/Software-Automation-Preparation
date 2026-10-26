@@ -1,0 +1,34 @@
+build a realsitic e commerce module by using core java concepts and OOP's concpets to build the system the following are the requirements
+
+1.representing customers with thier perosnal information this includes - name ,email, address and phone no 
+while representing the customer information follow encapsulation and abstraction so that no private data is accessed directly.
+
+2. the system should able to create a pool of customer data (data base) we need to perform addition of cutomers
+deletion of cutomers,manipulation of cutomers data and rettrival of customer based on different queries like if a customer name is given will corresponding the customer record should be record.
+if a city name is given then corresponding the list of details should be return.
+if a phone no is given corresponding customer details should be return.
+
+3.Manage the catalog of products,here manage means we have to create a list of products where at any time there is a possiblity of adding products,deleting products and manipulating the prodcuts and whenever a customer is exploring the products in a E-Commerce platfrom it should be provide quering
+
+1.when a prodId is given return the corresponding details
+2.when a ProdName is given return the corresponing the details of products
+3.return the list of products matching those details
+4.when a prod Name and Price range is given retun the list of products with in the range
+5.when a prod Name and compnay name is given return the list of products produced by the company.
+6.when a prod return the list of detials represented by it details
+
+3.The customer should able to register and login with a E-commerce platform whenever the customer needs to explore the products and order the products.
+
+Handle the orders created by the customers it means.it means whenever a customer explore the products they should be added to basket once when customer confirms the Order should be created and stroed in the Database.
+NowOnwards the Order Status should be Updated at a Different levels by the Admin based on the Activity like Order just received ,order Dispatched,Order with courier ,order deliver to Customer,order returned and recieved with customer
+
+Whenever a Order is Dispatched and it is returned Courier agent and then customer need to see the tracking details.
+the payment process can be different types like UPI,credit card,debit card,COD
+
+while writing code use OOP's principles like encapsulation,inheritance,abstraction,polymorphism to provide interaction betweeen the objects when we create an order and we generate a order amount and order total and there it should be a shipping cost and the total cost.
+
+Once the system is simulated try adding gift card payment option.
+
+If possible provide a option for customers to have subscription to E-commerce platform the subscription can be montly,quarterly,half yearly and yearly during the subscription there is no any shipping cost to the customers.
+
+also try if a customers have multiple orders having Exceeding the threshold value provide discount coupons
