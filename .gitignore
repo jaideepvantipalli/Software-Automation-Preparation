@@ -1,14 +1,13 @@
-# Compiled Java class files
-*.class
+# Ignore IntelliJ folders anywhere in the project hierarchy
+**/.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
 
-# IntelliJ IDEA project files
-.idea/
-*.iml
-*.iws
-*.ipr
+# Ignore all compiled Java class files anywhere
+**/*.class
 
-# Build output directories
-out/
-target/
-bin/
-classes/
+# Ignore typical Java build outputs if you run them later
+**/out/
+**/target/
+**/bin/
