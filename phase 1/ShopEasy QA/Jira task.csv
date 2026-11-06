@@ -1,0 +1,411 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Labels,Labels,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Relates),Outward issue link (Relates),Inward issue link (Test),Inward issue link (Test),Inward issue link (Test),Inward issue link (Test),Outward issue link (Test),Custom field (Actual end),Custom field (Actual start),Custom field (Affected hardware),Custom field (Affected services),Custom field (Approvals),Custom field (Atlassian Project),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Focus Areas),Custom field (Goals),Custom field (Impact),Custom field (Incident manager),Custom field (Insights),Custom field (Issue color),Custom field (Locked forms),Custom field (Major incident),Custom field (Open forms),Custom field (Project overview key),Custom field (Project overview status),Custom field (Rank),Custom field (Request Type),Custom field (Request language),Custom field (Request participants),Custom field (Responders),Satisfaction rating,Custom field (Satisfaction date),Custom field (Sentiment),Custom field (Severity),Sprint,Custom field (Start date),Custom field (Status pages),Custom field (Story Points),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Time to close after resolution),Custom field (Time to first response),Custom field (Time to resolution),Custom field (Total forms),Custom field (Urgency),Custom field (Work category),Custom field (Work item created forms),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Parent,Parent key,Parent summary,Status category,Status category changed
+Account Management,SEQ-1,10002,Epic,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 7:13 AM,30/Oct/26 6:13 PM,,,,0,,,,"This Epic covers user account management and authentication functionality for the ShopEasy online shopping application.
+
+The functionality includes:
+
+* User registration with valid and unique email addresses.
+* User login and authentication.
+* Account locking after five consecutive failed login attempts for 15 minutes.
+* Password recovery through a time-limited, single-use reset link.
+* Secure logout and prevention of access to authenticated pages after logout.
+
+Requirements covered: REQ-A1, REQ-A2, REQ-A3, REQ-A4, REQ-A5.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},ghx-label-8,,To Do,,,,,,dark_purple,,,,,,0|i00009:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,30/Oct/26 7:13 AM
+Product Catalog,SEQ-2,10003,Epic,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 7:16 AM,30/Oct/26 6:13 PM,,,,0,,,,"This Epic covers the product discovery and browsing functionality of the ShopEasy online shopping application.
+
+The functionality includes:
+
+* Displaying products with pagination.
+* Searching products by name using case-insensitive keywords.
+* Filtering products by category and price range.
+* Sorting products by price and name.
+* Viewing product details, stock status and Add to Cart availability.
+
+Requirements covered: REQ-B1, REQ-B2, REQ-B3, REQ-B4, REQ-B5.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},ghx-label-7,,To Do,,,,,,purple,,,,,,0|i0000b:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,30/Oct/26 7:16 AM
+Cart and Order Management,SEQ-3,10004,Epic,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 7:16 AM,30/Oct/26 6:13 PM,,,,0,,,,"This Epic covers shopping cart operations and the complete order placement process in the ShopEasy online shopping application.
+
+The functionality includes:
+
+* Displaying the total number of cart items.
+* Updating product quantities and removing cart items.
+* Applying eligible discount coupons.
+* Validating checkout and shipping information.
+* Supporting Card, UPI and Cash on Delivery payment methods.
+* Displaying order confirmation with a unique Order ID and confirmation email.
+
+Requirements covered: REQ-C1, REQ-C2, REQ-C3, REQ-C4, REQ-C5, REQ-C6.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},ghx-label-8,,To Do,,,,,,dark_purple,,,,,,0|i0000k:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,30/Oct/26 7:16 AM
+Account Lock After Failed Attempts,SEQ-6,10007,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:43 AM,02/Nov/26 8:46 AM,05/Nov/26 6:42 PM,,,0,req-a3,,,"REQ-A3
+
+As a user,
+I want my account to be locked after five consecutive failed login attempts
+to prevent unauthorized access.
+
+Acceptance Criteria:
+
+# Given five consecutive failed attempts, 
+When the fifth attempt fails, 
+Then my account should be locked for 15 minutes.
+# Given a locked account, 
+When I try to log in before 15 minutes, 
+Then access should be denied.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-23,SEQ-24,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000k:i,,,,,,,,,SHEQ Sprint 1,,,5.0,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,Done,30/Oct/26 6:07 PM
+User Registration,SEQ-4,10005,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:38 AM,02/Nov/26 7:31 AM,,,,0,req-a1,,,"REQ-A1
+
+As a new user, 
+
+I want to register using my name, email and password,
+
+so that I can create an account.
+
+Acceptance Criteria:
+
+# Given valid registration details, 
+When I submit the form, 
+Then my account should be created.
+# Given an already registered email, 
+When I register again, 
+Then the system should reject it.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-19,SEQ-20,SEQ-51,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000l:,,,,,,,,,SHEQ Sprint 1,,,3.0,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,Done,30/Oct/26 6:07 PM
+User Login,SEQ-5,10006,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:42 AM,02/Nov/26 7:32 AM,,,,0,req-a2,,,"As a registered user,
+
+I want to log in using my email and password,
+
+So that i can access my account.
+
+Acceptance Criteria:
+
+# Given valid credentials, 
+When I log in, 
+Then I should reach the home page.
+# Given invalid credentials, 
+When I log in, 
+Then I should see ""Invalid email or password"".",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-21,SEQ-22,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000l:2,,,,,,,,,SHEQ Sprint 1,,,3.0,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,Done,30/Oct/26 6:07 PM
+Password Reset,SEQ-7,10008,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:45 AM,02/Nov/26 8:48 AM,,,,0,req-a4,,,"REQ-A4
+
+As a user, I want to reset my forgotten password using an email link so that I can regain account access.
+
+Acceptance Criteria:
+
+# Given a registered email, 
+When I request a reset, 
+Then a reset link should be emailed.
+# Given an expired or previously used link, 
+When I open it, 
+Then the reset should be rejected.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-26,SEQ-27,SEQ-28,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000l:4,,,,,,,,,SHEQ Sprint 1,,,3.0,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,Done,30/Oct/26 6:07 PM
+Secure User Logout,SEQ-8,10009,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:46 AM,30/Oct/26 6:07 PM,,,,0,req-a5,,,"REQ-A5
+
+As a logged-in user, 
+I want to log out securely ,
+so that my account cannot be accessed by others.
+
+Acceptance Criteria:
+
+# Given an authenticated session, 
+When I log out, 
+Then the session should end.
+# Given that I have logged out, 
+When I press the browser Back button, 
+Then account pages should not be accessible.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000l:9,,,,,,,,,SHEQ Sprint 1,,,2.0,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,Done,30/Oct/26 6:07 PM
+Search Products by Name,SEQ-10,10011,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:50 AM,02/Nov/26 8:53 AM,02/Nov/26 8:53 AM,,,0,req-b2,,,"REQ-B2
+As a customer, 
+I want to search products by name ,
+so that I can quickly find items.
+
+Acceptance Criteria:
+
+# Given a matching product exists, 
+When I search by keyword, 
+Then matching products should appear regardless of letter case.
+# Given no matching product exists, 
+When I search, 
+Then ""No products found"" should appear.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-31,SEQ-32,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000l:i,,,,,,,,,SHEQ Sprint 1,,,2.0,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,Done,30/Oct/26 6:07 PM
+View Product Listing,SEQ-9,10010,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:50 AM,02/Nov/26 8:50 AM,,,,0,req-b1,,,"REQ-B1
+
+As a customer, 
+I want to view products in a paginated list, 
+so that I can browse available items.
+
+Acceptance Criteria:
+
+# Given products are available, 
+When I open the product page, 
+Then 12 products should appear per page.
+# Given products are displayed, 
+When I view a product card, 
+Then its image, name and price should appear.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-29,SEQ-30,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:,,,,,,,,,SHEQ Sprint 1,,,3.0,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,Done,30/Oct/26 6:07 PM
+Update Quantity and Remove Cart Items,SEQ-15,10016,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 10:12 AM,02/Nov/26 9:02 AM,30/Oct/26 6:05 PM,,,0,req-c2,req-c3,,"REQ-C2, REQ-C3
+
+As a customer, I want to update quantities and remove products so that I can manage my cart.
+
+Acceptance Criteria:
+
+# Given an item is in my cart, When I change its quantity between 1 and 10, Then the line total should update.
+# Given an item is in my cart, When I remove it, Then the cart total should update immediately.
+# Given all items are removed, When I open my cart, Then an empty cart message should appear.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-41,SEQ-42,SEQ-43,SEQ-44,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:01,,,,,,,,,SHEQ Sprint 2,,,3.0,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,Done,30/Oct/26 6:09 PM
+Payment and Order Confirmation,SEQ-18,10019,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 10:16 AM,02/Nov/26 9:06 AM,,,,0,req-c6,,,"REQ-C6
+
+As a customer, I want to select a payment method and receive order confirmation so that I know my order was placed.
+
+Acceptance Criteria:
+
+# Given I am checking out, When I select Card, UPI or COD and place the order, Then the order should be processed.
+# Given my order is placed, When confirmation is displayed, Then I should receive a unique Order ID and confirmation email.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-49,SEQ-50,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:02,,,,,,,,,SHEQ Sprint 2,,,5.0,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,Done,30/Oct/26 6:09 PM
+Validate Checkout and Shipping Details,SEQ-17,10018,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 10:15 AM,02/Nov/26 9:05 AM,,,,0,req-c5,,,"REQ-C5
+
+As a customer, I want to provide valid shipping details and log in before checkout so that I can place an order.
+
+Acceptance Criteria:
+
+# Given I am not logged in, When I proceed to checkout, Then I should be required to log in.
+# Given shipping details are incomplete or invalid, When I submit checkout, Then validation errors should appear.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-47,SEQ-48,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:04,,,,,,,,,SHEQ Sprint 2,,,5.0,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,Done,30/Oct/26 6:09 PM
+View Product Detailsand Stock,SEQ-13,10014,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:56 AM,02/Nov/26 8:58 AM,,,,0,req-b5,,,"REQ-B5
+
+As a customer, I want to view product details and stock status so that I can decide whether to purchase a product.
+
+Acceptance Criteria:
+
+# Given a product is selected, When I open its details, Then its images, name, price, description and stock status should appear.
+# Given a product is out of stock, When I view its details, Then Add to Cart should be disabled.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-37,SEQ-38,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:09,,,,,,,,,SHEQ Sprint 2,,,3.0,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,Done,30/Oct/26 6:09 PM
+Apply Discount Coupon,SEQ-16,10017,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 10:13 AM,02/Nov/26 9:03 AM,,,,0,req-c4,,,"REQ-C4
+
+As a customer, I want to apply a coupon so that I can receive eligible discounts.
+
+Acceptance Criteria:
+
+# Given my cart value is at least Rs.1000, When I apply SAVE10, Then a 10% discount should be applied.
+# Given my cart value is below Rs.1000, When I apply SAVE10, Then the coupon should be rejected.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-45,SEQ-46,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:0i,,,,,,,,,SHEQ Sprint 2,,,3.0,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,Done,30/Oct/26 6:09 PM
+Display Cart Item Count,SEQ-14,10015,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 10:11 AM,02/Nov/26 8:59 AM,30/Oct/26 6:05 PM,,,0,req-c1,,,"REQ-C1
+As a customer, I want to see the total number of items in my cart so that I can track my selections.
+
+Acceptance Criteria:
+
+# Given I add products to my cart, When I view the cart icon, Then it should display the total item count.
+# Given my cart is empty, When I view the cart icon, Then it should display zero items.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-39,SEQ-40,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:1,,,,,,,,,SHEQ Sprint 2,,,1.0,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,Done,30/Oct/26 6:09 PM
+Sort Products by Category and Price,SEQ-12,10013,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:55 AM,02/Nov/26 8:56 AM,,,,0,req-b4,,,"REQ-B4
+
+As a customer, I want to sort products by price or name so that I can browse them conveniently.
+
+Acceptance Criteria:
+
+# Given products are displayed, When I select price low-to-high, Then products should appear in ascending price order.
+# Given products are displayed, When I select name A-Z, Then products should appear alphabetically.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-36,SEQ-35,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:2,,,,,,,,,SHEQ Sprint 2,,,2.0,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,Done,30/Oct/26 6:09 PM
+Filter Products by Category and Price,SEQ-11,10012,Story,Done,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,30/Oct/26 9:54 AM,02/Nov/26 8:54 AM,,,,0,req-b3,,,"REQ-B3
+
+As a customer,I want to filter products by category and price range so that ic an find  suitable items.
+
+Acceptance criteria:
+
+1.Given a category is selected,When i apply the filter,then products from that category should appear.
+
+2.Given category and minimum/maximum prices are selected,wehn i apply filters,then products matching all selected filters should appear.",,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,SEQ-33,SEQ-34,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000m:4,,,,,,,,,SHEQ Sprint 2,,,2.0,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,Done,30/Oct/26 6:09 PM
+Verify registration with valid details,SEQ-19,10020,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 5:50 AM,03/Nov/26 7:05 PM,05/Nov/26 6:50 PM,,,0,positive,req-a1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-4,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000n:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 5:50 AM
+User email is not registered,SEQ-52,10053,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 8:43 AM,03/Nov/26 7:05 PM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000r:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Oct/26 8:43 AM
+Verify registration with duplicate email,SEQ-20,10021,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 5:55 AM,02/Nov/26 7:31 AM,02/Nov/26 7:31 AM,,,0,negative,req-a1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-4,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0000v:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 5:55 AM
+Verify login with valid credentials,SEQ-21,10022,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 5:57 AM,02/Nov/26 7:32 AM,03/Nov/26 5:31 PM,,,0,positive,req-a2,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-5,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0001a:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 5:57 AM
+Verify login with invalid credentials,SEQ-22,10023,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 5:57 AM,02/Nov/26 7:32 AM,02/Nov/26 8:40 AM,,,0,negative,req-a2,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-5,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0001h:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 5:58 AM
+Verify account lock after five failed attempts,SEQ-23,10024,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 5:59 AM,02/Nov/26 8:46 AM,02/Nov/26 8:45 AM,,,0,positive,req-a3,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-6,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0001v:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 5:59 AM
+Verify login restriction during account lock,SEQ-24,10025,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 5:59 AM,02/Nov/26 6:43 PM,02/Nov/26 8:46 AM,,,0,edge,req-a3,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-85,,,,,SEQ-6,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00021:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 5:59 AM
+Verify password reset link generation,SEQ-25,10026,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:00 AM,31/Oct/26 6:22 AM,02/Nov/26 8:46 AM,,,0,positive,req-a4,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0002e:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 6:00 AM
+User has a registered email,SEQ-57,10090,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 4:54 AM,02/Nov/26 4:54 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0002h:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 4:54 AM
+Verify expired or reused reset link,SEQ-26,10027,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:00 AM,02/Nov/26 6:45 PM,02/Nov/26 8:47 AM,,,0,negative,req-a4,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-86,,,,,SEQ-7,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0002j:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 6:00 AM
+Verify successful logout,SEQ-27,10028,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:01 AM,02/Nov/26 8:48 AM,02/Nov/26 8:48 AM,,,0,positive,req-a5,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-7,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0002v:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 6:01 AM
+Verify browser Back after logout,SEQ-28,10029,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:01 AM,02/Nov/26 8:48 AM,02/Nov/26 8:49 AM,,,0,edge,req-a5,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-7,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0002z:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10002,SEQ-1,Account Management,To Do,31/Oct/26 6:01 AM
+Verify 12 products per page,SEQ-29,10030,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:02 AM,02/Nov/26 8:50 AM,02/Nov/26 8:49 AM,,,0,positive,req-b1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-9,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003a:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:02 AM
+Verify pagination with 13 products,SEQ-30,10031,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:02 AM,02/Nov/26 8:50 AM,02/Nov/26 8:50 AM,,,0,edge,req-b1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-9,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003d:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:02 AM
+Verify case-insensitive product search,SEQ-31,10032,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:03 AM,02/Nov/26 6:46 PM,02/Nov/26 8:50 AM,,,0,positive,req-b2,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-87,,,,,SEQ-10,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003n:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:03 AM
+Verify search with no matching product,SEQ-32,10033,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:03 AM,02/Nov/26 8:53 AM,02/Nov/26 8:53 AM,,,0,negative,req-b2,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-10,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003p:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:03 AM
+ShopEasy – Functional Test Plan,SEQ-82,10115,Test Plan,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 10:27 AM,02/Nov/26 5:41 PM,02/Nov/26 5:53 PM,,,0,functional-testing,shopeasy,,Test plan for validating all 16 ShopEasy requirements.,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003u:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 10:27 AM
+ShopEasy – Sprint Functional Test Execution,SEQ-83,10116,Test Execution,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 5:22 PM,02/Nov/26 5:41 PM,02/Nov/26 7:04 PM,,,0,shopeasy,test-execution,,Execution of the functional test cases for ShopEasy build 1.0.3 in the staging environment.,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003w:,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 5:22 PM
+Verify category and price filtering,SEQ-33,10034,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:04 AM,02/Nov/26 8:54 AM,02/Nov/26 8:53 AM,,,0,positive,req-b3,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-11,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003y:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:04 AM
+Verify filtering when no products match,SEQ-34,10035,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:04 AM,02/Nov/26 8:54 AM,02/Nov/26 8:54 AM,,,0,edge,req-b3,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-11,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0003z:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:04 AM
+Verify products sorted by price low to high,SEQ-35,10036,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:05 AM,02/Nov/26 8:56 AM,02/Nov/26 8:56 AM,,,0,positive,req-b4,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-12,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00047:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:05 AM
+Verify products sorted by price high to low,SEQ-36,10037,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:05 AM,02/Nov/26 6:46 PM,02/Nov/26 8:55 AM,,,0,edge,req-b4,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-88,,,,,SEQ-12,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0004m:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:05 AM
+Verify product details display,SEQ-37,10038,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:06 AM,02/Nov/26 8:58 AM,02/Nov/26 8:56 AM,,,0,positive,req-b5,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-13,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0004t:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:06 AM
+Verify Add to Cart for out-of-stock product,SEQ-38,10039,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:06 AM,02/Nov/26 8:58 AM,02/Nov/26 8:58 AM,,,0,edge,req-b5,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-13,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00057:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10003,SEQ-2,Product Catalog,To Do,31/Oct/26 6:06 AM
+Verify cart item count,SEQ-39,10040,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:07 AM,02/Nov/26 8:59 AM,02/Nov/26 8:59 AM,,,0,positive,req-c1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-14,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0005d:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:07 AM
+Verify cart count after removing all items,SEQ-40,10041,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Low,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:07 AM,02/Nov/26 8:59 AM,02/Nov/26 8:59 AM,,,0,edge,req-c1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-14,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0005q:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:07 AM
+Verify cart quantity and line total,SEQ-41,10042,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:07 AM,02/Nov/26 9:01 AM,02/Nov/26 9:01 AM,,,0,positive,req-c2,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-15,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0005v:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:07 AM
+Verify cart quantity boundaries,SEQ-42,10043,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:08 AM,02/Nov/26 6:47 PM,02/Nov/26 9:01 AM,,,0,edge,req-c2,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-89,,,,,SEQ-15,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00067:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:08 AM
+Verify cart item removal,SEQ-43,10044,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:08 AM,02/Nov/26 9:02 AM,02/Nov/26 9:02 AM,,,0,positive,req-c3,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-15,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0006b:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:08 AM
+Verify empty cart message,SEQ-44,10045,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Low,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:09 AM,02/Nov/26 9:02 AM,02/Nov/26 9:02 AM,,,0,edge,req-c3,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-15,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0006m:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:09 AM
+Verify SAVE10 coupon for eligible cart,SEQ-45,10046,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:09 AM,02/Nov/26 9:03 AM,02/Nov/26 9:02 AM,,,0,positive,req-c4,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-16,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0006p:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:09 AM
+Verify SAVE10 coupon below minimum cart value,SEQ-46,10047,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:09 AM,02/Nov/26 6:47 PM,02/Nov/26 9:03 AM,,,0,negative,req-c4,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-90,,,,,SEQ-16,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0006z:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:09 AM
+Verify checkout with valid shipping details,SEQ-47,10048,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:10 AM,02/Nov/26 9:04 AM,02/Nov/26 9:04 AM,,,0,positive,req-c5,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-17,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00071:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:10 AM
+Verify guest checkout restriction,SEQ-48,10049,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:11 AM,02/Nov/26 9:05 AM,02/Nov/26 9:04 AM,,,0,negative,req-c5,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-17,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0007a:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:11 AM
+Verify supported payment methods,SEQ-49,10050,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:11 AM,02/Nov/26 9:05 AM,02/Nov/26 9:05 AM,,,0,positive,req-c6,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,SEQ-18,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0007b:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:11 AM
+Verify order confirmation details,SEQ-50,10051,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:11 AM,02/Nov/26 6:48 PM,02/Nov/26 9:05 AM,,,0,edge,req-c6,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-91,,,,,SEQ-18,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0007j:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:11 AM
+Verify registration with invalid password,SEQ-51,10052,Test,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 6:12 AM,02/Nov/26 6:44 PM,02/Nov/26 6:05 PM,,,0,negative,req-a1,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,SEQ-84,,,,,SEQ-4,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0007y:4,,,,,,,,,,,,,,,,,,,,,,,,,,,10004,SEQ-3,Cart and Order Management,To Do,31/Oct/26 6:12 AM
+john@test.com is already registered.,SEQ-53,10054,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 9:10 AM,31/Oct/26 9:10 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0008c:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Oct/26 9:10 AM
+User is registered,SEQ-54,10055,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 9:12 AM,31/Oct/26 9:12 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0008i:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Oct/26 9:12 AM
+User account is active,SEQ-55,10056,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 9:22 AM,31/Oct/26 9:22 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0008v:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Oct/26 9:22 AM
+Account is locked after five consecutive failed attempts,SEQ-56,10057,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,31/Oct/26 9:27 AM,31/Oct/26 9:27 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00090:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,31/Oct/26 9:27 AM
+A reset link has expired after 30 minutes or has already been used,SEQ-58,10091,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 5:04 AM,02/Nov/26 5:04 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i00093:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 5:04 AM
+User is logged in,SEQ-59,10092,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 5:09 AM,02/Nov/26 5:10 AM,02/Nov/26 5:10 AM,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0009d:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 5:09 AM
+User has logged out,SEQ-60,10093,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:28 AM,02/Nov/26 6:28 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0009f:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:28 AM
+At least 12 products exist,SEQ-61,10094,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:33 AM,02/Nov/26 6:33 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0009o:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:33 AM
+Exactly 13 products are available in the test data,SEQ-62,10095,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:33 AM,02/Nov/26 6:33 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0009p:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:33 AM
+Cotton Shirt exists in the product catalog,SEQ-63,10096,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:42 AM,02/Nov/26 6:42 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i0009x:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:42 AM
+No product matches the search keyword,SEQ-64,10097,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:43 AM,02/Nov/26 6:43 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000ac:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:43 AM
+Product catalog contains different categories and prices,SEQ-65,10098,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:48 AM,02/Nov/26 6:48 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000aj:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:48 AM
+No product matches the selected category and price range,SEQ-66,10099,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:53 AM,02/Nov/26 6:53 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000ax:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:53 AM
+Products have different prices,SEQ-67,10100,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:54 AM,02/Nov/26 6:54 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000b3:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:54 AM
+Cotton Shirt is available,SEQ-68,10101,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:57 AM,02/Nov/26 6:57 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000bg:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:57 AM
+Backpack is out of stock,SEQ-69,10102,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:59 AM,02/Nov/26 6:59 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000bl:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 6:59 AM
+Product catalog is available,SEQ-70,10103,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:03 AM,02/Nov/26 7:03 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000bx:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:03 AM
+Cart contains items,SEQ-71,10104,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:04 AM,02/Nov/26 7:04 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000c1:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:04 AM
+Cotton Shirt is in the cart,SEQ-72,10105,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:05 AM,02/Nov/26 7:05 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000cc:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:05 AM
+Cart contains Cotton Shirt,SEQ-73,10106,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:08 AM,02/Nov/26 7:08 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000cf:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:08 AM
+Cart contains exactly one item,SEQ-74,10107,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:09 AM,02/Nov/26 7:09 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000cp:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:09 AM
+Cart value is Rs.1200,SEQ-75,10108,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:10 AM,02/Nov/26 7:10 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000cr:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:10 AM
+Cart value is Rs.450,SEQ-76,10109,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:11 AM,02/Nov/26 7:11 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000d0:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:11 AM
+User is logged in and cart contains an item,SEQ-77,10110,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:13 AM,02/Nov/26 7:13 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000d1:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:13 AM
+User is not logged in and cart contains an item,SEQ-78,10111,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:16 AM,02/Nov/26 7:16 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000d9:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:16 AM
+User is logged in and has completed checkout details,SEQ-79,10112,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:18 AM,02/Nov/26 7:18 AM,,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000do:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:18 AM
+A valid order has been placed,SEQ-80,10113,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:19 AM,02/Nov/26 7:19 AM,02/Nov/26 5:45 PM,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000dv:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:19 AM
+Email is not registered,SEQ-81,10114,Precondition,To Do,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 7:20 AM,02/Nov/26 7:20 AM,02/Nov/26 5:45 PM,,,0,,,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000e9:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,To Do,02/Nov/26 7:20 AM
+Invalid password accepted during registration,SEQ-84,10117,Bug,In Progress,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:34 PM,03/Nov/26 5:49 PM,03/Nov/26 5:54 PM,,,0,registration,req-a1,validation,"Preconditions:
+
+* User is on the registration page.
+* Email address is not already registered.
+
+Steps to reproduce:
+
+# Open the registration page.
+# Enter a valid full name.
+# Enter a unique email address.
+# Enter password {{abc12345}}.
+# Submit the registration form.
+
+Expected result:
+
+Registration should be rejected because the password does not contain a special character.
+
+Actual result:
+
+Registration was successfully completed using {{abc12345}}.
+
+Observation: OBS-1","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-51,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000ee:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,In Progress,03/Nov/26 5:40 PM
+Account unlocked before 15 minutes,SEQ-85,10118,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:35 PM,03/Nov/26 5:51 PM,03/Nov/26 5:46 PM,,,0,account-lock,login,req-a3,"Preconditions
+
+* A registered user account exists.
+* User has valid login credentials.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the login page.|ShopEasy staging URL|
+|2|Enter an incorrect password.|Valid email, incorrect password|
+|3|Repeat the failed login attempt until five consecutive failures occur.|5 failed attempts|
+|4|Wait for 5 minutes.|5 minutes|
+|5|Attempt login using valid credentials.|Registered email and correct password|
+
+Expected Result: Account should remain locked for the full 15 minutes. Login should not be permitted before the lock period expires.
+
+Actual Result: Login was successful after waiting only 5 minutes.","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-24,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000eq:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:51 PM
+Password reset link works after expiry,SEQ-86,10119,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:36 PM,03/Nov/26 5:46 PM,03/Nov/26 5:45 PM,,,0,password-reset,req-a4,security,"Preconditions
+
+* A registered user account exists.
+* User has access to the registered email account.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the login page.|ShopEasy staging URL|
+|2|Select Forgot Password.|Registered email|
+|3|Request a password reset link.|[john.test101@example.com|mailto:john.test101@example.com]|
+|4|Wait for 45 minutes.|45 minutes|
+|5|Open the password reset link received by email.|Generated reset link|
+|6|Enter a new password and submit.|New valid password|
+
+Expected Result: The reset link should expire after 30 minutes. Password reset should not be permitted using an expired link.
+
+Actual Result: The reset link opened after 45 minutes, and the password was successfully changed.","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-26,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000eu:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:46 PM
+Product search is case-sensitive	,SEQ-87,10120,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:36 PM,03/Nov/26 5:51 PM,02/Nov/26 6:50 PM,,,0,catalog,product-search,req-b2,"Preconditions
+
+* ShopEasy product catalog contains Cotton Shirt.
+* User is on the product listing page.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the product listing page.|ShopEasy staging URL|
+|2|Enter a lowercase keyword in the search field.|{{shirt}}|
+|3|Observe the search results.|Cotton Shirt|
+|4|Replace the keyword with uppercase letters.|{{SHIRT}}|
+|5|Observe the search results again.|Cotton Shirt|
+
+Expected Result: Product search should be case-insensitive. Both {{shirt}} and {{SHIRT}} should return matching products.
+
+Actual Result: Search for {{shirt}} worked, but search for {{SHIRT}} returned no products.","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-31,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000f5:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:51 PM
+Products are not sorted correctly by price high to low,SEQ-88,10121,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:36 PM,03/Nov/26 5:51 PM,02/Nov/26 6:56 PM,,,0,catalog,product-sorting,req-b4,"Preconditions
+
+* Product catalog contains multiple products with different prices.
+* User is on the product listing page.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the product listing page.|ShopEasy staging URL|
+|2|Locate the sorting option.|Sort dropdown|
+|3|Select price high to low.|High to Low|
+|4|Observe the displayed product prices.|All available products|
+
+Expected Result: Products should be displayed in descending order of price:
+
+{{3500, 1200, 999, 450, 150}}
+
+Actual Result: Products were displayed in this order:
+
+{{999, 450, 3500, 1200, 150}}","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-36,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000f8:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:51 PM
+Cart accepts quantity greater than 10,SEQ-89,10122,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:37 PM,03/Nov/26 5:52 PM,03/Nov/26 5:47 PM,,,0,cart,quantity-validation,req-c2,"Preconditions
+
+* User has added a product to the shopping cart.
+* Cart contains at least one item.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the shopping cart.|ShopEasy staging URL|
+|2|Locate the product quantity field.|Cotton Shirt|
+|3|Change the quantity.|{{11}}|
+|4|Submit or update the quantity.|Update Cart|
+|5|Observe the quantity displayed.|11|
+
+Expected Result: The system should not allow a product quantity greater than 10.
+
+Actual Result: The cart accepted quantity 11 successfully","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-42,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000fi:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:52 PM
+SAVE10 coupon applied below minimum cart value,SEQ-90,10123,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,Medium,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:37 PM,03/Nov/26 5:52 PM,02/Nov/26 6:54 PM,,,0,cart,coupon-validation,req-c4,"Preconditions
+
+* User has added products to the shopping cart.
+* Cart value is below Rs.1000.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the product listing page.|ShopEasy staging URL|
+|2|Add two Notebooks to the cart.|Rs.150 × 2|
+|3|Open the shopping cart.|Cart total Rs.300|
+|4|Locate the coupon field.|Coupon field|
+|5|Enter the coupon code.|{{SAVE10}}|
+|6|Apply the coupon.|Click Apply|
+|7|Observe the discount amount.|Rs.30|
+
+Expected Result: SAVE10 should only be applicable when the cart value is Rs.1000 or more. The coupon should be rejected for a Rs.300 cart.
+
+Actual Result: SAVE10 was applied successfully, providing a Rs.30 discount on a Rs.300 cart.","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-46,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000fk:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:52 PM
+Order confirmation does not display Order ID,SEQ-91,10124,Bug,Closed,SEQ,ShopEasy QA,software,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,High,,,,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,02/Nov/26 6:40 PM,03/Nov/26 5:52 PM,03/Nov/26 2:43 PM,,,0,order-confirmation,payment,req-c6,"Preconditions
+
+* User is logged in.
+* User has items in the cart.
+* Valid shipping details are provided.
+
+Steps to reproduce
+
+||Step||Action||Test Data||
+|1|Open the checkout page.|ShopEasy staging URL|
+|2|Enter valid shipping details.|Valid name, phone, address, city and PIN|
+|3|Select UPI as the payment method.|UPI|
+|4|Complete the payment process.|Valid payment|
+|5|Observe the order confirmation page.|Confirmation page|
+|6|Check the confirmation email.|Registered email|
+
+Expected Result: After successful order placement, the confirmation page should display a unique Order ID, and a confirmation email should be sent.
+
+Actual Result: The confirmation email was received, but the order confirmation page did not display an Order ID","ShopEasy build 1.0.3, Staging, Chrome latest, Windows 11",Jaideep Vantipalli,712020:db148887-a0eb-4ca4-9f8a-30af0c32e8fc,,,,,,,,,SEQ-50,,,,,,,,,,,ApprovalsCFValue{approvals=[]},,,,,{},,,,,,,,,,,,,,,0|i000ft:4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Done,03/Nov/26 5:52 PM
