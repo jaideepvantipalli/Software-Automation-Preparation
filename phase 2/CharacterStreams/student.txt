@@ -1,0 +1,5 @@
+Hello Java
+learning file handling
+Student Name: Jaideep
+College: SVEC
+CGPA: 8.8
