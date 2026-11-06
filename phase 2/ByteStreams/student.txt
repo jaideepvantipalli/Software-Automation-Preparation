@@ -1,0 +1,6 @@
+Student Details
+----------------
+Name: Jaideep
+ID: 101
+CGPA: 8.80
+Passed: true
