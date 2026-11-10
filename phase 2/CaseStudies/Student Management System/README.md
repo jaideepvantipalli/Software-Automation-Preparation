@@ -1,231 +1,173 @@
-# Student Management System (Java File Handling)
+# Student Management System using Java File Handling
 
-A menu-driven console application built using **Core Java** and the
-**`java.io` package** to manage student records stored in a text file
-(`student.txt`).
+## 📌 Project Overview
 
-The application supports adding, viewing, searching, updating, and
-deleting student records without using a database.
+The **Student Management System** is a menu-driven Java application developed to manage student records using file handling concepts from the `java.io` package.
 
-## Features
+The application stores student information permanently in a text file named `student.txt` and supports essential CRUD (Create, Read, Update, Delete) operations.
 
--   **Add student:** Store a new student record in `student.txt`.
--   **View all students:** Read and display every saved student record.
--   **Search by roll number:** Find a student using their unique roll
-    number.
--   **Search by name:** Find student records by name (case-insensitive
-    exact match).
--   **Delete student:** Remove a record using the student's roll number.
--   **Update student:** Modify a student's age, name, and subject marks
-    using the roll number.
--   **Automatic grade calculation:** Calculate the average of five
-    subjects and assign a grade.
+This project demonstrates how Java File I/O can be used to perform record management without using databases or the Collections Framework.
 
-## Student Record Structure
+## 🎯 Objectives
 
-Each student record contains:
+- Understand Java File Handling using the `java.io` package.
+- Perform CRUD operations on a text file.
+- Read and write student records using character streams.
+- Search student records based on roll number and name.
+- Update and delete specific records using temporary-file handling.
+- Develop a menu-driven console application.
 
-  Field         Description                         Type
-  ------------- ----------------------------------- ----------
-  Roll Number   Unique student identifier           `int`
-  Age           Student age                         `int`
-  Name          Student name                        `String`
-  M1--M5        Marks in five subjects (0--100)     `double`
-  Grade         Grade calculated from the average   `String`
+## 🛠️ Technologies Used
 
-### Grade Criteria
+- **Programming Language:** Java
+- **Package:** `java.io`
+- **Storage:** Text File (`student.txt`)
+- **IDE:** IntelliJ IDEA
 
-The application uses the following sample grading scale. Change the
-thresholds in `calculateGrade()` if your institution follows a different
-grading system.
+## 📋 Student Record Structure
 
-      Average Grade
-  ----------- -------
-      90--100 O
-    80--89.99 A+
-    70--79.99 A
-    60--69.99 B
-    50--59.99 C
-     Below 50 F
+Each student record contains the following attributes:
 
-## Technologies and Concepts
+| Attribute | Description | Data Type |
+|---|---|---|
+| Roll Number | Unique student identification number | int |
+| Age | Student age | int |
+| Name | Student name | String |
+| M1 | Subject 1 marks | double |
+| M2 | Subject 2 marks | double |
+| M3 | Subject 3 marks | double |
+| M4 | Subject 4 marks | double |
+| M5 | Subject 5 marks | double |
+| Grade | Calculated grade | String |
 
--   Java
--   `java.io.File`
--   `java.io.FileReader`
--   `java.io.FileWriter`
--   `java.io.BufferedReader`
--   `java.io.BufferedWriter`
--   `java.io.InputStreamReader`
--   `ArrayList` for temporary in-memory record handling
--   Exception handling and try-with-resources
--   Menu-driven programming and CRUD operations
+## ⚙️ Features
 
-## Project Structure
+The application provides the following menu-driven operations:
 
-``` text
+### 1. Add Student Record
+- Accepts student details from the user.
+- Checks whether the roll number already exists.
+- Calculates the student's average marks and grade.
+- Appends the new record to `student.txt`.
+
+### 2. Display All Student Records
+- Reads all records from the file.
+- Displays complete student information.
+- Handles empty or non-existing files.
+
+### 3. Search Student by Roll Number
+- Accepts a roll number from the user.
+- Searches the file sequentially.
+- Displays the matching student record.
+
+### 4. Search Student by Name
+- Accepts a student name.
+- Performs a case-insensitive name search.
+- Displays matching student records.
+
+### 5. Delete Student Record
+- Searches for the student using the roll number.
+- Uses temporary-file handling to preserve all records except the selected record.
+- Replaces the original file with the updated records.
+
+### 6. Update Student Record
+- Searches for an existing student using the roll number.
+- Accepts updated student details.
+- Writes the modified record while preserving other student records.
+
+## 📁 Project Structure
+
+```text
 StudentManagementSystem/
+│
 ├── src/
 │   └── StudentManagementSystem.java
-└── student.txt
+│
+├── student.txt
+│
+└── README.md
 ```
 
-`student.txt` is created automatically in the application's working
-directory when the first student record is added. If your IDE uses a
-different working directory, the file may appear there instead.
+*Note: `student.txt` is created automatically when the application adds its first student record. Its actual location depends on the application's working directory.*
 
-## How to Run
+## 📄 File Storage Format
 
-### Prerequisites
-
--   JDK installed (Java 8 or later)
--   IntelliJ IDEA, Eclipse, VS Code, or a terminal
-
-### Run from the terminal
-
-1.  Clone this repository:
-
-    ``` bash
-    git clone <YOUR_REPOSITORY_URL>
-    ```
-
-2.  Move into the project directory:
-
-    ``` bash
-    cd StudentManagementSystem
-    ```
-
-3.  Compile the source file:
-
-    ``` bash
-    javac StudentManagementSystem.java
-    ```
-
-4.  Run the application:
-
-    ``` bash
-    java StudentManagementSystem
-    ```
-
-If your source file is inside a package or `src` directory, compile and
-run it using the corresponding package/class path.
-
-## Application Menu
-
-``` text
-================================
-   STUDENT MANAGEMENT SYSTEM
-================================
-1. Add Student Record
-2. Read All Student Records
-3. Search Student By Roll Number
-4. Search Student By Name
-5. Delete Student By Roll Number
-6. Update Student By Roll Number
-0. Exit
-================================
-Enter Your Choice:
-```
-
-## File Storage Format
-
-Records are stored as plain text, with one student per line. The pipe
-(`|`) character separates fields.
+Student records are stored in `student.txt` using the pipe (`|`) delimiter.
 
 Example:
 
-``` text
+```text
 101|20|Jaideep|85.0|90.0|78.0|88.0|92.0|A+
-102|21|Rahul|75.0|80.0|70.0|85.0|90.0|A
+102|21|Rahul|75.0|80.0|70.0|85.0|90.0|A+
+103|20|Kiran|60.0|65.0|72.0|68.0|75.0|B
 ```
 
-The fields are stored in this order:
+Each line represents one student record.
 
-``` text
-rollNumber|age|name|M1|M2|M3|M4|M5|grade
+## Java Concepts Implemented
+
+| Java Class / Concept | Purpose |
+|---|---|
+| `File` | Represents the student data file |
+| `FileReader` | Reads character data from the file |
+| `FileWriter` | Writes student records into the file |
+| `BufferedReader` | Reads records efficiently, line by line |
+| `BufferedWriter` | Writes records efficiently |
+| `InputStreamReader` | Reads keyboard input as character data |
+| `String.split()` | Separates individual record attributes |
+| Try-with-resources | Automatically closes file resources |
+| Exception Handling | Handles file-related exceptions |
+| Temporary File Handling | Supports update and delete operations |
+
+**Note:** The implementation uses file-based record processing rather than `ArrayList` or other Java Collection Framework classes.
+
+## ▶️ How to Run the Project
+
+1. Clone this repository:
+
+```bash
+git clone <your-repository-url>
 ```
 
-## How CRUD Works
+2. Open the project in IntelliJ IDEA or any Java IDE.
 
-  -----------------------------------------------------------------------
-  Operation                           Implementation
-  ----------------------------------- -----------------------------------
-  Create                              `FileWriter` in append mode adds a
-                                      new line without replacing existing
-                                      records.
+3. Ensure that JDK is installed and configured.
 
-  Read                                `BufferedReader.readLine()` reads
-                                      records one line at a time.
+4. Open `StudentManagementSystem.java`.
 
-  Search                              Each line is split using
-                                      `String.split("\\|")`, then the
-                                      required field is compared.
+5. Compile and execute the program:
 
-  Update                              Records are loaded into an
-                                      `ArrayList`, the matching entry is
-                                      replaced, and the file is
-                                      rewritten.
+```bash
+javac StudentManagementSystem.java
+java StudentManagementSystem
+```
 
-  Delete                              Records are loaded into an
-                                      `ArrayList`, the matching entry is
-                                      removed, and the remaining records
-                                      are written back.
-  -----------------------------------------------------------------------
+6. Select the required operation from the menu.
 
-### Important Implementation Details
+## Grade Calculation
 
--   `new FileWriter(FILE_NAME, true)` opens the file in append mode.
--   `new FileWriter(FILE_NAME, false)` overwrites the existing file
-    contents.
--   `BufferedReader` provides convenient line-by-line reading.
--   `BufferedWriter.newLine()` writes a platform-appropriate line
-    separator.
--   Try-with-resources closes file streams automatically.
--   A roll number is checked before adding a record to prevent
-    duplicates.
+The application calculates the average marks of five subjects and assigns a grade.
 
-## Limitations
-
--   This is an educational file-handling project, not a production-grade
-    record management system.
--   Update and delete operations rewrite the complete file.
--   Records are temporarily loaded into memory for update and delete
-    operations.
--   The pipe character (`|`) is reserved as a field delimiter and is not
-    allowed in student names.
--   The application does not provide concurrent-user or transaction
-    support.
--   The sample grade thresholds are illustrative and should be adjusted
-    to institutional rules.
-
-## Possible Enhancements
-
--   Add sorting by roll number, name, or average marks.
--   Add partial-name search.
--   Add validation for age and roll number.
--   Add a confirmation step before deletion.
--   Use a temporary file and safe replacement strategy for more reliable
-    updates.
--   Separate the `Student` model, file operations, and menu logic into
-    different classes.
--   Add unit tests for CRUD operations and grade calculation.
+| Average Marks | Grade |
+|---|---|
+| 90 – 100 | O |
+| 80 – 89.99 | A+ |
+| 70 – 79.99 | A |
+| 60 – 69.99 | B |
+| 50 – 59.99 | C |
+| Below 50 | F |
 
 ## Learning Outcomes
 
-By completing this project, you can practise:
+Through this project, I gained practical experience in:
 
--   Reading and writing text files in Java.
--   Using byte/character-oriented file APIs and buffered character
-    streams.
--   Implementing CRUD operations without a database.
--   Handling exceptions and closing resources safely.
--   Searching and modifying collections of records.
+- Understanding Java character streams.
+- Working with `FileReader`, `FileWriter`, `BufferedReader`, and `BufferedWriter`.
+- Performing CRUD operations using text files.
+- Implementing sequential searching.
+- Managing file records through temporary-file operations.
+- Handling exceptions during file operations.
+- Developing menu-driven Java applications.
+---
 
-## Author
-
-**Jaideep**
-
-------------------------------------------------------------------------
-
-If you find this project useful, feel free to fork the repository and
-extend it.
+**Developed as a Java File Handling Practice Project.**
