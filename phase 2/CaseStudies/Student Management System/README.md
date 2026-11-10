@@ -150,12 +150,12 @@ The application calculates the average marks of five subjects and assigns a grad
 
 | Average Marks | Grade |
 |---|---|
-| 90 – 100 | O |
-| 80 – 89.99 | A+ |
-| 70 – 79.99 | A |
-| 60 – 69.99 | B |
-| 50 – 59.99 | C |
-| Below 50 | F |
+| 91 – 100 | S |
+| 81 – 90 | A |
+| 71 – 80 | B |
+| 61 – 70 | C |
+| 51 – 60 | D |
+| Below 50 | E |
 
 ## Learning Outcomes
 
