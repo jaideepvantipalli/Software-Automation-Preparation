@@ -239,7 +239,7 @@ public class StudentGradingSystem {
     }
 
     static String calcGrade(double m1,double m2,double m3,double m4,double m5){
-        double avg=m1+m2+m3+m4+m5;
+        double avg=(m1+m2+m3+m4+m5)/5.0;
         if(avg <=100 && avg >91 ) return "S";
         else if(avg <=90 && avg >81 ) return "A";
         else if(avg <=80 && avg >71 ) return "B";
