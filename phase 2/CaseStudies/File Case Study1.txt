@@ -1,0 +1,11 @@
+You are asked to develop a sample Java application to manage student data in a file called student.txt as collection of records.
+The attributes for student record are roll number, age, name, marks, which are five types: M1, M2, M3, M4, M5, with and grade
+ and a grade column. You should create menu driven application to perform CRUD operations on student file.
+ Menu options:
+ add record,
+ read all records,
+ read record as roll number,
+ read record as name,
+ delete record on roll number,
+ update record on roll number,
+ using files.
