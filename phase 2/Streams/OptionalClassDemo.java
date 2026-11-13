@@ -31,7 +31,6 @@ public class OptionalClassDemo {
 
         // Never call get() blindly on an empty Optional.
 
-
         System.out.println("\n===== 3. DEFAULT VALUE METHODS =====");
 
         // orElse()
