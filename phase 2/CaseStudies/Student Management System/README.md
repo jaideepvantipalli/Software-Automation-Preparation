@@ -4,7 +4,7 @@
 
 The **Student Management System** is a menu-driven Java application developed to manage student records using file handling concepts from the `java.io` package.
 
-The application stores student information permanently in a text file named `student.txt` and supports essential CRUD (Create, Read, Update, Delete) operations.
+The application stores student information permanently in a text file named `src/student.txt` and supports essential CRUD (Create, Read, Update, Delete) operations.
 
 This project demonstrates how Java File I/O can be used to perform record management without using databases or the Collections Framework.
 
@@ -21,7 +21,7 @@ This project demonstrates how Java File I/O can be used to perform record manage
 
 - **Programming Language:** Java
 - **Package:** `java.io`
-- **Storage:** Text File (`student.txt`)
+- **Storage:** Text File (`src/student.txt`)
 - **IDE:** IntelliJ IDEA
 
 ## 📋 Student Record Structure
@@ -48,7 +48,7 @@ The application provides the following menu-driven operations:
 - Accepts student details from the user.
 - Checks whether the roll number already exists.
 - Calculates the student's average marks and grade.
-- Appends the new record to `student.txt`.
+- Appends the new record to `src/student.txt`.
 
 ### 2. Display All Student Records
 - Reads all records from the file.
@@ -88,11 +88,11 @@ StudentManagementSystem/
 └── README.md
 ```
 
-*Note: `student.txt` is created automatically when the application adds its first student record. Its actual location depends on the application's working directory.*
+*Note: `src/student.txt` is created automatically when the application adds its first student record. Its actual location depends on the application's working directory.*
 
 ## 📄 File Storage Format
 
-Student records are stored in `student.txt` using the pipe (`|`) delimiter.
+Student records are stored in `src/student.txt` using the pipe (`|`) delimiter.
 
 Example:
 

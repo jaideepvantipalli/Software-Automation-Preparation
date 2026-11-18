@@ -4,7 +4,7 @@
 
 The **Student Management System** is a menu-driven Java console application developed using Object-Oriented Programming (OOP) principles and Java File Handling.
 
-The application manages student records permanently using a text file named `student.txt`. It supports CRUD (Create, Read, Update, Delete) operations through a structured, multi-class architecture.
+The application manages student records permanently using a text file named `src/student.txt`. It supports CRUD (Create, Read, Update, Delete) operations through a structured, multi-class architecture.
 
 This project demonstrates the practical implementation of Encapsulation, Abstraction, Classes, Objects, Constructors, and Method Communication while performing file operations using the `java.io` package.
 
@@ -26,7 +26,7 @@ This project demonstrates the practical implementation of Encapsulation, Abstrac
 |---|---|
 | Programming Language | Java |
 | File Handling | `java.io` |
-| Storage | Text File (`student.txt`) |
+| Storage | Text File (`src/student.txt`) |
 | IDE | IntelliJ IDEA |
 | Programming Paradigm | Object-Oriented Programming |
 
@@ -68,7 +68,7 @@ Represents an individual student and maintains student-related information.
 Responsible for interacting with the student data file.
 
 **Responsibilities:**
-- Creates and manages `student.txt`.
+- Creates and manages `src/student.txt`.
 - Checks duplicate roll numbers.
 - Adds student records using `FileWriter`.
 - Reads student records using `BufferedReader`.
@@ -106,7 +106,7 @@ The application provides the following operations:
 - Accepts student information.
 - Checks for duplicate roll numbers.
 - Calculates the average marks and grade.
-- Appends the student record to `student.txt`.
+- Appends the student record to `src/student.txt`.
 
 ### 2. Read All Student Records
 - Reads all records from the file.
@@ -152,7 +152,7 @@ StudentManagementSystem/
 └── README.md
 ```
 
-**Note:** `student.txt` is created automatically when the first student record is added. `Temp.txt` is created during update and delete operations.
+**Note:** `src/student.txt` is created automatically when the first student record is added. `Temp.txt` is created during update and delete operations.
 
 ## 🔄 Application Workflow
 
@@ -184,7 +184,7 @@ The application follows a layered approach:
 2. The service class processes the request.
 3. The Student class represents the student data.
 4. The file handler performs the required file operation.
-5. Student records are stored permanently in `student.txt`.
+5. Student records are stored permanently in `src/student.txt`.
 
 ## 📄 File Storage Format
 
@@ -204,10 +204,10 @@ Each line represents one student record.
 
 | OOP Concept | Implementation | Description |
 |---|---|---|
-| Encapsulation | `Student.java` | Uses private attributes and public getter methods. |
-| Abstraction | `StudentFileHandler.java` | Hides internal file-handling implementation behind methods. |
+| Encapsulation | `src/Student.java` | Uses private attributes and public getter methods. |
+| Abstraction | `src/StudentFileHandler.java` | Hides internal file-handling implementation behind methods. |
 | Classes and Objects | All four classes | Organizes the application into reusable components. |
-| Constructors | `Student.java` | Initializes student objects. |
+| Constructors | `src/Student.java` | Initializes student objects. |
 | Method Communication | Service and FileHandler | Allows objects to communicate through method calls. |
 | Separation of Concerns | Project architecture | Assigns different responsibilities to different classes. |
 
