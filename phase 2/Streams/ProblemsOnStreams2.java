@@ -1,0 +1,2 @@
+public class ProblemsOnStreams2 {
+}
