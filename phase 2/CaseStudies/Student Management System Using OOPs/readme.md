@@ -87,7 +87,7 @@ Acts as an intermediate layer between the main application and file handling cla
 - Invokes appropriate file-handling methods.
 - Coordinates student-related operations.
 
-### 4. StudentManagementSystem.java – Main Class
+### 4. StudentManagementSystem.java – com.demography.Main Class
 
 Acts as the application entry point.
 
@@ -157,7 +157,7 @@ StudentManagementSystem/
 ## 🔄 Application Workflow
 
 ```text
-             Main Class
+             com.demography.Main Class
                  |
                  v
          StudentManagementSystem
