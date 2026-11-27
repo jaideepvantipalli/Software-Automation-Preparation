@@ -1,0 +1,60 @@
+1.	Design a payroll management system for an organization with different types of employees.
+Create an abstract class Employee with private fields id (int), name (String), and department (String). Include a constructor, getters, and an abstract method double calculateSalary().
+Create two subclasses:
+FullTimeEmployee: Adds baseSalary (double) and bonus (double). calculateSalary() returns baseSalary + bonus.
+ContractEmployee: Adds hourlyRate (double) and hoursWorked (int). calculateSalary() returns hourlyRate * hoursWorked.
+Create a PayrollManager class that maintains a List<Employee> and implements the following methods using Java Streams and Lambdas:
+Map<String, Double> getDepartmentWiseTotalSalary(): Returns a map of each department to its total salary payout.
+List<String> getTopEarners(double threshold): Returns a sorted list (alphabetical) of employee names whose calculated salary is strictly greater than the threshold.
+Constraints
+1 ≤ Number of employees ≤ 10⁴
+Salaries and rates are non-negative doubles.
+Sample Input & Output
+Input:
+FullTimeEmployee(101, "Alice", "IT", 60000, 10000) -> Salary: 70000.0
+ContractEmployee(102, "Bob", "IT", 500, 100) -> Salary: 50000.0
+FullTimeEmployee(103, "Charlie", "HR", 55000, 5000) -> Salary: 60000.0
+threshold = 55000
+Output:
+Department-wise Total Salary: {IT=120000.0, HR=60000.0}
+Top Earners (> 55000): ["Alice", "Charlie"
+
+3.   Contest Leaderboard Ranking
+  An online judge evaluates submissions and ranks participants at the end of a contest.
+  Each participant is represented by a Participant object containing the following attributes:
+  	String username: The unique handle of the participant.
+  	int problemsSolved: The total number of problems successfully solved.
+  	int penaltyTime: The total penalty time accumulated (in minutes).
+  	int rating: The participant's current competitive rating.
+  At the end of the contest, you are given a list of N participants. Your task is to sort and rank all participants according to the official contest tie-breaking rules:
+  1.	Problems Solved: Participants with a higher problemsSolved count rank higher (descending order).
+  2.	Penalty Time: If two or more participants have solved the same number of problems, the participant with a lower penaltyTime ranks higher (ascending order).
+  3.	Current Rating: If both problemsSolved and penaltyTime are identical, the participant with a higher rating ranks higher (descending order).
+  4.	Username: If all three metrics above are tied, participants are ranked alphabetically by username in lexicographical order (ascending order, case-sensitive).
+  Input Format
+  •	The first line contains an integer N, representing the total number of participants.
+  •	Each of the next N lines contains a string and three space-separated integers: username, problemsSolved, penaltyTime, and rating.
+  Output Format
+  •	Print N lines representing the final leaderboard from Rank 1 to Rank N.
+  •	Each line should display the username, problemsSolved, penaltyTime, and rating separated by a single space.
+  Constraints
+  •	1 ≤ N ≤ 10⁵
+  •	1 ≤ |username| ≤ 20 (contains only alphanumeric characters and underscores)
+  •	0 ≤ problemsSolved ≤ 20
+  •	0 ≤ penaltyTime ≤ 10⁶
+  •	0 ≤ rating ≤ 4000
+  •	All usernames are guaranteed to be unique.
+  Test case 1:
+  Input 
+  5
+  alice 5 120 1850
+  bob 6 210 1700
+  charlie 5 120 1920
+  dave 5 150 2000
+  eve 5 120 1920
+        Output 1
+  bob 6 210 1700
+  charlie 5 120 1920
+  eve 5 120 1920
+  alice 5 120 1850
+  dave 5 150 2000
